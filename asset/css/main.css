@@ -1,0 +1,125 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    background-color: #ffffff; /* Optional: Background color for the navbar */
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers the navbar in the middle of the container */
+    align-items: center; /* Centers the items vertically */
+   
+}
+
+.items {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    list-style-type: none; /* Removes the default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.list div {
+    margin: 0 15px; /* Adds spacing between each list item */
+    padding-top: 15px;
+}
+
+.list li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000000; /* Text color */
+    font-weight: bold; /* Optional: Makes the text bold */
+    padding: 10px 20px; /* Adds padding inside each link */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.list li a:hover {
+    background-color: #ddd; /* Changes background color on hover */
+}
+
+.active {
+    color: rgb(0, 0, 0); /* Active link text color */
+    background-color: #ddd;
+}
+
+
+/* Home */
+#Home{
+    padding-top: 50px; 
+    height: 700px;
+}
+ 
+
+/* about */
+
+#about{
+    padding-top: 60px; 
+    height: 700px;
+}
+
+.About-content{
+  display: grid;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px; 
+}
+.grid-item {
+  border: 15px solid rgb(245, 245, 245);
+
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    gap: 30px;
+    display: inline-flex;
+    
+  }
+
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  #landmark p{
+    text-align: justify;
+  }
+  #landmark h5{
+    text-align: justify;  
+  }
+ #landmark li{
+    list-style-type: none;
+    font-size: 20px;
+    bottom: 0%;  
+    display: inline-flex;
+    padding: 10px;
+ }
+ #landmark li a{
+    text-decoration: none;
+    color: #000000;
+   
+ }
+ /* #landmark button{
+    background-color: #000000;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 50px;
+    border-color: #000000;
+} */
+
+
+/* StyleMenu */
+
+#styleMenu{
+    padding-top: 60px; 
+    height: 700px;
+}
