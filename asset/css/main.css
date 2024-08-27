@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
+    background-color: rgb(252, 252, 252);
 }
 
 nav {
@@ -70,7 +71,7 @@ nav {
 .About-content{
   display: grid;
   gap: 10px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 10px; 
 }
 .grid-item {
@@ -107,14 +108,7 @@ nav {
     color: #000000;
    
  }
- /* #landmark button{
-    background-color: #000000;
-    color: white;
-    height: 35px;
-    width: 100px;
-    border-radius: 50px;
-    border-color: #000000;
-} */
+ 
 
 
 /* StyleMenu */
@@ -122,4 +116,100 @@ nav {
 #styleMenu{
     padding-top: 60px; 
     height: 700px;
+    align-items: center;
+    justify-content: center;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* min-height: 100vh; */
 }
+.card-list .card-item{
+    list-style: none;
+}
+.card-wrapper{
+    width: 600px;
+    margin: 0 60px 35px;
+    /* height: 600px; */
+    padding: 20px 10px;
+    overflow: hidden;
+    
+}
+
+.card-list .card-item .card-link{
+   width: 400px;
+    display: block;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px  solid transparent;
+    box-shadow: 0 10px 10px rgb(106, 106, 106);
+}
+.card-list .card-item .card-link:hover{
+    border-color: #ffffff;
+}
+
+.card-list .card-link .card-image{
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 10px;
+
+}
+
+.card-list .card-link .badge{
+    color: rgb(255, 255, 255);
+    margin: 16px 0 18px;
+    background-color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    width: fit-content;
+    border-radius: 50px;
+    
+}
+
+.card-list .card-link .badge .one{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.card-list .card-link .badge .two{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.card-list .card-link .badge .three{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.card-list .card-link .card-title{
+    font-size: 2.0rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+.card-titleMenu{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.card-wrapper .swipper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background-color: #717070;
+}
+
+.card-wrapper .swipper-pagination-bullet-active{
+    opacity: 1;
+}
+
+
+/* Offers */
+
+#offers{
+    padding-top: 60px; 
+    height: 700px;
+}
+
