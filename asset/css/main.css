@@ -1,22 +1,22 @@
-body{
-    margin: 0%;
-    padding: 0%;
+body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(252, 252, 252);
 }
 
 nav {
-    background-color: #ffffff; /* Optional: Background color for the navbar */
+    background-color: #ffffff;
     height: 50px;
     width: 100%;
     position: fixed;
     border-bottom: 1px solid #dfdfdf;
+    z-index: 1000; /* Ensures navbar stays above other elements */
 }
 
 .container {
     display: flex;
-    justify-content: center; /* Centers the navbar in the middle of the container */
-    align-items: center; /* Centers the items vertically */
-   
+    justify-content: center;
+    align-items: center;
 }
 
 .items {
@@ -25,140 +25,123 @@ nav {
 
 .list {
     display: flex;
-    list-style-type: none; /* Removes the default list bullets */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .list div {
-    margin: 0 15px; /* Adds spacing between each list item */
+    margin: 0 15px;
     padding-top: 15px;
 }
 
 .list li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #000000; /* Text color */
-    font-weight: bold; /* Optional: Makes the text bold */
-    padding: 10px 20px; /* Adds padding inside each link */
-    border-radius: 5px; /* Optional: Adds rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.list li a:hover {
-    background-color: #ddd; /* Changes background color on hover */
-}
-
-.active {
-    color: rgb(0, 0, 0); /* Active link text color */
+.list li a:hover, .active {
     background-color: #ddd;
 }
 
-
 /* Home */
-#Home{
+#Home {
     padding-top: 50px; 
     height: 700px;
 }
- 
 
-/* about */
-
-#about{
+/* About */
+#about {
     padding-top: 60px; 
     height: 700px;
 }
 
-.About-content{
-  display: grid;
-  gap: 10px;
-  /* background-color: #ffffff; */
-  padding: 10px; 
+.About-content {
+    display: grid;
+    gap: 10px;
+    padding: 10px; 
 }
-.grid-item {
-  border: 15px solid rgb(245, 245, 245);
 
+.grid-item {
+    border: 15px solid rgb(245, 245, 245);
     text-align: center;
     padding: 20px;
     font-size: 25px;
     gap: 30px;
     display: inline-flex;
-    
-  }
+}
 
-  .item1 {
+.item1 {
     grid-column: 1 / span 2;
     grid-row: 1;
-  }
+}
 
-  #landmark p{
+#landmark p, #landmark h5 {
     text-align: justify;
-  }
-  #landmark h5{
-    text-align: justify;  
-  }
- #landmark li{
+}
+
+#landmark li {
     list-style-type: none;
     font-size: 20px;
-    bottom: 0%;  
     display: inline-flex;
     padding: 10px;
- }
- #landmark li a{
+}
+
+#landmark li a {
     text-decoration: none;
     color: #000000;
-   
- }
- 
-
+}
 
 /* StyleMenu */
-
-#styleMenu{
+#styleMenu {
     padding-top: 60px; 
     height: 700px;
     align-items: center;
     justify-content: center;
-   display: flex;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   /* min-height: 100vh; */
-}
-.card-list .card-item{
-    list-style: none;
-}
-.card-wrapper{
-    width: 600px;
-    margin: 0 60px 35px;
-    /* height: 600px; */
-    padding: 20px 10px;
-    overflow: hidden;
-    
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card-list .card-item .card-link{
-   width: 400px;
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-wrapper {
+    width: 500px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    /* overflow:visible; */
+}
+
+.card-list .card-item .card-link {
+    width: 400px;
     display: block;
     background-color: #ffffff;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px  solid transparent;
+    border: 2px solid transparent;
     box-shadow: 0 10px 10px rgb(106, 106, 106);
 }
-.card-list .card-item .card-link:hover{
+
+.card-list .card-item .card-link:hover {
     border-color: #ffffff;
 }
 
-.card-list .card-link .card-image{
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-      border-radius: 10px;
-
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.card-list .card-link .badge{
+.card-list .card-link .badge {
     color: rgb(255, 255, 255);
     margin: 16px 0 18px;
     background-color: rgb(0, 0, 0);
@@ -166,50 +149,39 @@ nav {
     font-size: 0.95rem;
     width: fit-content;
     border-radius: 50px;
-    
 }
 
-.card-list .card-link .badge .one{
-    color: rgb(0, 0, 0);
-    background-color: white;
-}
-.card-list .card-link .badge .two{
-    color: rgb(0, 0, 0);
-    background-color: white;
-}
-.card-list .card-link .badge .three{
+.card-list .card-link .badge .one, .two, .three {
     color: rgb(0, 0, 0);
     background-color: white;
 }
 
-.card-list .card-link .card-title{
+.card-list .card-link .card-title {
     font-size: 2.0rem;
     color: #000;
     font-weight: 600;
     text-align: center;
 }
-.card-titleMenu{
+
+.card-titleMenu {
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
     text-align: justify;
 }
 
-.card-wrapper .swipper-pagination-bullet {
+.card-wrapper .swiper-pagination-bullet {
     height: 13px;
     width: 13px;
     opacity: 0.5;
     background-color: #717070;
 }
 
-.card-wrapper .swipper-pagination-bullet-active{
+.card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
 }
 
-
 /* Offers */
-
-#offers{
+#offers {
     padding-top: 60px; 
     height: 700px;
 }
-
