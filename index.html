@@ -7,36 +7,56 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /> 
     <link href="./asset/css/main.css" rel="stylesheet"/>
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+
 </head>
 <body>
-     <!-- Navbar -->
+    <!-- Head-top -->
+       <div class="container Head-top" > 
+            <div class="head-list">
+                    <li><a href=""><i class="uil uil-phone-alt"></i> 9384178442</a></li>
+                    <li><a href=""><i class="uil uil-whatsapp"></i> 9384178424</a></li>
+                    <li><a href=""><i class="uil uil-location-pin-alt"></i> 216/4 Bus near in my Shop
+                        Sattur Pincode-626203</li>       
+            </div>
+            <div class="social-media">
+            <li><a href=""><i class="uil uil-instagram"></i></a></li> 
+            <li><a href=""><i class="uil uil-youtube"></i></a></li> 
+            <li><a href=""><i class="uil uil-twitter"></i> </a></li> 
+            <li><a href=""><i class="uil uil-facebook-f"></i> </a></li> 
+
+
+            </div> 
+        </div>
+
+                        <!-- Navbar -->
     <nav>
         <div class="container">
              <div  class="items" >
                      <ul class="list">
                         <div class="home">
                             <li>
-                                <a href="#Home" id="item1" class="active">Home</a>
+                                <a href="index.html" id="item1" class="active">Home</a>
                             </li>
                         </div>
-                        <div class="about">
+                        <!-- <div class="about">
                             <li>
                                 <a href="#about" id="item2">About</a>
                             </li>
-                        </div>
+                        </div> -->
                         <div class="style-list">
                             <li>
-                                <a href="#styleMenu" id="item3">StyleMenu</a>
+                                <a href="#stylemenu" id="item3">OurServices</a>
                             </li>
                         </div>
-                        <div class="offers">
+                        <!-- <div class="offers">
                             <li>
                                 <a href="" id="item4">Offers</a>
                             </li>
-                        </div>
+                        </div> -->
                         <div class="contact">
                             <li>
                                 <a href="" id="item5">Contact</a>
@@ -47,122 +67,93 @@
         </div>
     </nav>
     
-
-    <!-- Home page -->
     
+
+                     <!-- Homepage     -->
     <div class="container"  id="Home">
-           <div class="Home-content">
-               <img src="./asset/img/wallpaper.jpg" width="1500" height="700">
+        <div class="bg-image">
+            <img src="./asset/img/wallpaper.jpg" alt="" width="1400">
+        </div>
+           <div class="Home-content bg-text">
+            <h2>Look Sharp, Feel Sharp</h2>
+            <p>Get the best HairCut in City</p>
+            <a href="#styleMenu" class="cta-button">Book Now</a>
            </div>
     </div>
-     
-    <!-- About -->
-      <div class="container" id="about">
-           <div class="About-content">
-                 <div id="about-img" class="grid-item">
-                     <img src="./asset/img/aboutImg.jpg" width="700" height="500">
-                    <div id="landmark" class="item1">
-                     <h1>Barber shop</h1>
-                      <p>
-                        At Chennai Saloon, we blend tradition with modern style, offering expert haircuts, shaves, and grooming services in a welcoming environment. Our skilled barbers are dedicated to providing personalized care, ensuring you
-                         leave looking and feeling your best. 
-                         Experience classic barbering with a contemporary 
-                         touch at Chennai Saloon.
-                      </p>
-                      <p>
-                         <b>Location : </b>216/4 Edward school opposite located in my Shop
-                           Sattur, Virdhunagar-Tamil Nadu -- Pincode : 626203.
-                     </p>
-                     <li><a href=""><i class="uil uil-phone-alt"></i> 9384178442</a></li>
-                     <li><a href=""><i class="uil uil-whatsapp"></i> 9384178424</a></li>
-                     <li><a href=""><i class="uil uil-instagram"></i> Barbar shop</a></li> 
-                     <li><a href=""><i class="uil uil-youtube"></i> Youtube</a></li>                      
-                    </div>
-                 </div>
-           </div>
-      </div>
-      
-      <!-- stylemenu -->
-
-      <div class="container swiper" id="styleMenu">
-            <div class="card-wrapper">
-                 <ul class="card-list swiper-wrapper">
-                     <li class="card-item swiper-slide">
-                         <a href="#" class="card-link" title="Book Appointment">
-                            <img src="./asset/img/haircut.jpg" alt="card image" class="card-image">
-                            <p class="badge">Price : 250</p>
-                            <h2 class="card-title">HAIR CUT</h2>
-                            <p class="card-titleMenu">This package includes a haircut, hair wash, and hair freshener.</p>
-                            <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
-                         </a>
-                     </li>
-                     <li class="card-item swiper-slide">
-                        <a href="#" class="card-link" title="Book Appointment">
-                           <img src="./asset/img/bread shave.jpg" alt="card image" class="card-image">
-                           <p class="badge one">Price : 150</p>
-                           <h2 class="card-title">Bread Shaving</h2>
-                           <p class="card-titleMenu">using special cream,then followed by a face massage.</p>
-                           <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link" title="Book Appointment">
-                           <img src="./asset/img/hair color.jpg" alt="card image" class="card-image">
-                           <p class="badge two">Price : 550</p>
-                           <h2 class="card-title">HAIR COLOR</h2>
-                           <p class="card-titleMenu"> This package includes a Haircut , Hair Color, Hair wash, and Head massage.</p>
-                           <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link" title="Book Appointment">
-                           <img src="./asset/img/massage.jpg" alt="card image" class="card-image">
-                           <p class="badge three">Price : 1150</p>
-                           <h2 class="card-title">Body Massage</h2>
-                           <p class="card-titleMenu">This package includes a Naturel oil Massage in Total Body.</p>
-                           <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link" title="Book Appointment">
-                           <img src="./asset/img/children hair cut.jpg" alt="card image" class="card-image">
-                           <p class="badge three">Price : 200</p>
-                           <h2 class="card-title">Children HairCut</h2>
-                           <p class="card-titleMenu">This package includes a HairCut and HairWash</p>
-                           <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link" title="Book Appointment">
-                           <img src="./asset/img/facemask.jpeg" alt="card image" class="card-image">
-                           <p class="badge three">Price : 2000</p>
-                           <h2 class="card-title">Face Mask</h2>
-                           <p class="card-titleMenu">This package includes a  Vitamin C Sheet Mask Cream and Charcoal Face Mask.
-                            </p>
-                           <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
-                        </a>
-                    </li>
-                 </ul>   
-                 <div class="swiper-pagination"></div>
-                 <div class="swiper-button-prev"></div>
-                 <div class="swiper-button-next"></div>
-            </div>
-
-      </div>  
-      
-     <!-- Offers -->
-      <div class="container" id="offers">
-            <div class="Offer-content">
-                 <div class="offer">
-
-                 </div>
-            </div>
-      </div>
 
 
+     <!-- stylemenu -->
+     <div class="container swiper" id="styleMenu">
+           
+        <div class="card-wrapper">
+            <h2>Our Services</h2>
+             <ul class="card-list swiper-wrapper">
+                 <li class="card-item swiper-slide">
+                     <a href="#" class="card-link" title="Book Appointment">
+                        <img src="./asset/img/haircut.jpg" alt="card image" class="card-image">
+                        <p class="badge">Price : 250</p>
+                        <h2 class="card-title">HAIR CUT</h2>
+                        <p class="card-titleMenu">This package includes a haircut, hair wash, and hair freshener.</p>
+                        <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
+                     </a>
+                 </li>
+                 <li class="card-item swiper-slide">
+                    <a href="#" class="card-link" title="Book Appointment">
+                       <img src="./asset/img/bread shave.jpg" alt="card image" class="card-image">
+                       <p class="badge one">Price : 150</p>
+                       <h2 class="card-title">Bread Shaving</h2>
+                       <p class="card-titleMenu">using special cream,then followed by a face massage.</p>
+                       <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link" title="Book Appointment">
+                       <img src="./asset/img/hair color.jpg" alt="card image" class="card-image">
+                       <p class="badge two">Price : 550</p>
+                       <h2 class="card-title">HAIR COLOR</h2>
+                       <p class="card-titleMenu"> This package includes a Haircut , Hair Color, Hair wash, and Head massage.</p>
+                       <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link" title="Book Appointment">
+                       <img src="./asset/img/massage.jpg" alt="card image" class="card-image">
+                       <p class="badge three">Price : 1150</p>
+                       <h2 class="card-title">Body Massage</h2>
+                       <p class="card-titleMenu">This package includes a Naturel oil Massage in Total Body.</p>
+                       <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link" title="Book Appointment">
+                       <img src="./asset/img/children hair cut.jpg" alt="card image" class="card-image">
+                       <p class="badge three">Price : 200</p>
+                       <h2 class="card-title">Children HairCut</h2>
+                       <p class="card-titleMenu">This package includes a HairCut and HairWash</p>
+                       <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link" title="Book Appointment">
+                       <img src="./asset/img/facemask.jpeg" alt="card image" class="card-image">
+                       <p class="badge three">Price : 2000</p>
+                       <h2 class="card-title">Face Mask</h2>
+                       <p class="card-titleMenu">This package includes a  Vitamin C Sheet Mask Cream and Charcoal Face Mask.
+                        </p>
+                       <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
+                    </a>
+                </li>
+             </ul>   
+             <div class="swiper-pagination"></div>
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+        </div>
 
-      <!-- Link to swiperjs -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>     
+  </div>  
+
+
+    <!-- Link to swiperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>     
     <!-- Link to custom script -->
     <script src="script.js"></script>
  </body>

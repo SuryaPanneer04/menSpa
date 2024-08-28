@@ -1,12 +1,52 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(240, 240, 240);
+    scroll-behavior: smooth;
 }
 
+/* Head nav */
+.Head-top{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 55px;
+    z-index: 1000; /* Ensures navbar stays above other elements */
+
+}
+.Head-top .head-list{
+    display: inline-flex;
+    font-size: large;
+    list-style: none;   
+}
+.head-list a>i{
+    color: yellow;
+}
+.head-list a{
+    text-decoration: none;
+    padding:0px 30px;
+   color: white;
+}
+.social-media{
+    display: inline-flex;
+    padding:0px 30px;
+    list-style: none;
+}
+.social-media a>i{
+    color: white;
+}
+.social-media a{
+    padding:0 20px;   
+}
+
+/* end */
+
+/* navbar */
 nav {
+    margin-top: 50px;
     background-color: #ffffff;
-    height: 50px;
+    height: 60px;
     width: 100%;
     position: fixed;
     border-bottom: 1px solid #dfdfdf;
@@ -32,28 +72,70 @@ nav {
 
 .list div {
     margin: 0 15px;
-    padding-top: 15px;
+    padding-top: 20px;
 }
-
+.list a{
+    color: #000000;
+}
 .list li a {
     text-decoration: none;
-    color: #000000;
-    font-weight: bold;
+    font-weight:bold;
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: large;
+    border-radius: 35px;
     transition: background-color 0.3s ease;
 }
 
 .list li a:hover, .active {
-    background-color: #ddd;
+    background-color: #c7c0c0;
+    color: rgb(0, 0, 0);
 }
+
+/* end navbar */
+
 
 /* Home */
 #Home {
-    padding-top: 50px; 
-    height: 700px;
+    height: 600px;
 }
+.bg-image{    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(4px);
+    /* Full height */
+    height: 70vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Home-content{
+    font-size: x-large;
+  }
 
+  .cta-button{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #aa8f38;
+    color: #000000;
+    border-radius: 15px;
+  
+  }
 /* About */
 #about {
     padding-top: 60px; 
@@ -96,13 +178,13 @@ nav {
     color: #000000;
 }
 
-/* StyleMenu */
+
 #styleMenu {
-    padding-top: 60px; 
+    top: 100px; 
     height: 700px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -111,19 +193,24 @@ nav {
 .card-list .card-item {
     list-style: none;
 }
-
+.card-wrapper>h2{
+text-align: center;
+font-size: 32px;
+font-weight: bold;
+}
 .card-wrapper {
-    width: 500px;
-    margin: 0 60px 35px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px 10px;
-    /* overflow:visible; */
+    overflow: hidden;
 }
 
 .card-list .card-item .card-link {
-    width: 400px;
+    width: 100%;
     display: block;
     background-color: #ffffff;
-    padding: 18px;
+    padding: 8px;
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
@@ -151,9 +238,11 @@ nav {
     border-radius: 50px;
 }
 
-.card-list .card-link .badge .one, .two, .three {
-    color: rgb(0, 0, 0);
-    background-color: white;
+.card-list .card-link .badge.one, 
+.card-list .card-link .badge.two, 
+.card-list .card-link .badge.three {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .card-list .card-link .card-title {
@@ -178,10 +267,4 @@ nav {
 
 .card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
-}
-
-/* Offers */
-#offers {
-    padding-top: 60px; 
-    height: 700px;
 }
