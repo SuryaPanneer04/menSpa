@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenSpa</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /> 
-    <link href="./asset/css/main.css" rel="stylesheet"/>
+    <link href="./asset/css/main.css" rel="stylesheet"/> 
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -17,8 +17,8 @@
     <!-- Head-top -->
        <div class="container Head-top" > 
             <div class="head-list">
-                    <li><a href=""><i class="uil uil-phone-alt"></i> 9384178442</a></li>
-                    <li><a href=""><i class="uil uil-whatsapp"></i> 9384178424</a></li>
+                    <li><a href=""><i class="uil uil-phone-alt"></i> 9384178112</a></li>
+                    <li><a href=""><i class="uil uil-whatsapp"></i> 9384178112</a></li>
                     <li><a href=""><i class="uil uil-location-pin-alt"></i> 216/4 Bus near in my Shop
                         Sattur Pincode-626203</li>       
             </div>
@@ -36,33 +36,34 @@
     <nav>
         <div class="container">
              <div  class="items" >
-                     <ul class="list">
+                 <h1>The Chennai Saloon</h1>
+                     <!-- <ul class="list">
                         <div class="home">
                             <li>
                                 <a href="index.html" id="item1" class="active">Home</a>
                             </li>
-                        </div>
+                        </div> -->
                         <!-- <div class="about">
                             <li>
                                 <a href="#about" id="item2">About</a>
                             </li>
                         </div> -->
-                        <div class="style-list">
+                        <!-- <div class="style-list">
                             <li>
-                                <a href="#stylemenu" id="item3">OurServices</a>
+                                <a href="#styleMenu" id="item3">OurServices</a>
                             </li>
-                        </div>
+                        </div> -->
                         <!-- <div class="offers">
                             <li>
                                 <a href="" id="item4">Offers</a>
                             </li>
                         </div> -->
-                        <div class="contact">
+                        <!-- <div class="contact">
                             <li>
                                 <a href="" id="item5">Contact</a>
                             </li>
                         </div>
-                     </ul>  
+                     </ul>   -->
              </div>
         </div>
     </nav>
@@ -77,13 +78,44 @@
            <div class="Home-content bg-text">
             <h2>Look Sharp, Feel Sharp</h2>
             <p>Get the best HairCut in City</p>
-            <a href="#styleMenu" class="cta-button">Book Now</a>
+            <!-- Book Now Button -->
+          <a href="#" class="cta-button" onclick="openDialog()">Book Now</a>
+
+                <!-- Form Dialog -->
+                <div id="form-dialog" class="dialog-overlay">
+                <div class="dialog-box">
+                    <span class="close-button" onclick="closeDialog()">&times;</span>
+                    <h2 style="color: black;">Book an Appointment</h2>
+                    <form id="booking-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="Styles">Choose..</label>
+                    <select id="styles" name="styles">
+                    <option value="HairCut">HairCut</option>
+                    <option value="Bread Shave">Bread Shave</option>
+                    <option value="Hair Color">Hair Color</option>
+                    <option value="Body Massage">Body Massage</option>
+                    <option value="Children HairCut">Body Massage</option>
+                    <option value="Face Mask">Face Mask</option>
+                    </select>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+                </div>
+
            </div>
     </div>
 
 
      <!-- stylemenu -->
-     <div class="container swiper" id="styleMenu">
+     <div class="container styleitem swiper" id="styleMenu">
            
         <div class="card-wrapper">
             <h2>Our Services</h2>
@@ -110,7 +142,7 @@
                     <a href="#" class="card-link" title="Book Appointment">
                        <img src="./asset/img/hair color.jpg" alt="card image" class="card-image">
                        <p class="badge two">Price : 550</p>
-                       <h2 class="card-title">HAIR COLOR</h2>
+                       <h2 class="card-title">Hair Color</h2>
                        <p class="card-titleMenu"> This package includes a Haircut , Hair Color, Hair wash, and Head massage.</p>
                        <!-- <button class="card-button"><i class="uil uil-arrow-right"></i></button> -->
                     </a>
@@ -150,8 +182,69 @@
         </div>
 
   </div>  
+   
+  <!-- our team -->
 
+  <div id="about-team">
+    <h2>Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./asset/img/hairStyler1.jpg" alt="Jane">
+          <div class="contain">
+            <h2>Jane Doe</h2>
+            <p class="title">Shop Owner</p>
+            <p>
+              Welcome to our shop! We offer a variety of services delivered by a talented team. Book your appointment today to experience our top-notch services.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <img src="./asset/img/hairStyler2.jpg" alt="Mike">
+          <div class="contain">
+            <h2>Mike Ross</h2>
+            <p class="title">Hair Styles Specialist</p>
+            <p>
+              Professional haircuts to keep you looking sharp, smooth shaves for the perfect finish, and expert beard trims to style your look.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <img src="./asset/img/hairStyler3.jpg" alt="John">
+          <div class="contain">
+            <h2>John Doe</h2>
+            <p class="title">Massage Specialist</p>
+            <p>
+              Experience ultimate relaxation with our specialized massage services designed to rejuvenate your mind and body.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- <div class="container offer">
+         <div class="offer-title">
+               <h2>Offer now</h2>
+        </div>
+        <div class="offer-item">
+            <img src="./asset/img/Facial Treatment 3D Animated Icon (HD).gif" height="300px" width="300px">
+             <h2></h2>
+       </div>
+   </div> -->
 
+   <hr>
+   <div class="footer">
+    <p>© 2024 Shop, Inc. All rights reserved.</p>
+  </div>
+  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>   
     <!-- Link to swiperjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>     
     <!-- Link to custom script -->
